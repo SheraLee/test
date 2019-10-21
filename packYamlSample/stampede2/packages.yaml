@@ -1,0 +1,18 @@
+packages:
+   fftw:
+      paths:
+        fftw%intel: /opt/apps/intel18/impi18_0/fftw3/3.3.8
+        fftw%gcc:  /opt/apps/gcc7_1/impi18_0/fftw3/3.3.8
+      buildable: False
+
+   intel-mpi:
+      modules:
+        intel-mpi@18.0.2: impi/18.0.2
+      buildable: False
+
+   mvapich2:
+      modules:
+        mvapich2@2.3.1: mvapich2/2.3.1
+      buildable: False
+
+
