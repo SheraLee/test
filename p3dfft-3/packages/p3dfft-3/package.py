@@ -60,8 +60,6 @@ class P3dfft3(Package):
 
         if '+fftw' in spec:
             config_args.append('--enable-fftw')
-           # config_args.append ('--with-fftw-lib=/opt/apps/intel18/impi18_0/fftw3/3.3.8/lib')
-           # config_args.append ('--with-fftw-inc=/opt/apps/intel18/impi18_0/fftw3/3.3.8/include')
             config_args.append ('--with-fftw-lib= %s' % spec['fftw'].prefix.lib)
             config_args.append ('--with-fftw-inc= %s' % spec['fftw'].prefix.include)
 
